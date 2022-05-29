@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Eric Benitez</title>
+    <script>
+        function enviar() {
+         let name = document.querySelector(".nombre").value
+         let correo = document.querySelector(".correo").value
+         let mensaje = document.querySelector(".mensaje").value
+         if (name != "" && correo != "" && mensaje != "") {
+             alert("Su mensaje ha sido enviado.")
+         }else{
+             alert("Por favor complete todos los campos.")
+         }
+        }
+    </script>
+</head>
+<body>
+    <div class="contenedorEncabezado">
+    <div><p>Web personal</p></div> 
+    <div>   
+    <a href="#"><img class="logoFb" src="./imgs/fb.png"></a>
+    <a href="#"><img class="logoIg" src="./imgs/ig.png"></a>
+    </div>
+    </div>
+    <div class="contenedorPrincipal">
+        <div class="contenedorTexto"><h1>Eric Nahuel Benitez</h1>
+        <ul>
+            <li>Actualmente soy sonidista, trabajo en la parte tecnica de medios.</li>
+            <li>Comence a interesarme en desarrollar tareas que hacia de forma secundaria.</li>
+            <li>Vivo en Buenos Aires, Argentina.</li>
+            <li>Hobbies: Correr, dibujar, leer.</li>
+        </ul>
+        <div><img class="imagenConsola" src="./imgs/consola.jpg"></div>
+        </div>
+        <div class="contenedorImagen"><img class="imgYo" src="./imgs/eb (1).jpg"></div>
+    </div>
+    <div>
+        <div>
+        <form  class="contenedorForm" action="#">
+            <div>Tu nombre: <input type="text" name="nombre" class="nombre"></div>
+            <div>Tu dirección de correo: <input type="text" name="correo" class="correo"></div>
+            <div>
+              <textarea name="mensaje" class="mensaje" placeholder="Ingrese un mensaje"></textarea>
+            </div>
+            <div><button class="boton" onclick="enviar()">Enviar</button></div>
+          </form>
+        </div>
+    </div> 
+</body>
+</html>
